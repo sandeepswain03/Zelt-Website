@@ -1,0 +1,441 @@
+@font-face {
+  font-family: NoiGrotesk;
+  src: url(NoiGrotesk-Regular.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+#nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99;
+  left: 50%;
+  transform: translatex(-50%);
+  top: 3%;
+  border-radius: 15px;
+  height: 8vh;
+  width: 37vw;
+  background-color: #F3F1EF;
+  backdrop-filter: blur(100px);
+  padding: 0 10px;
+
+}
+
+#nav img{
+  width: 10%;
+}
+
+#nav button{
+  padding: 15px 10px;
+  font-size: 15px;
+  border-radius: 12px;
+  background-color: #FFCD6D;
+  border: 1px solid #F3F1EF;
+}
+
+#nav a{
+  text-decoration: none;
+  color: black;
+  font-family: NoiGrotesk;
+  font-weight: 100;
+}
+
+#main{
+  position: relative;
+  overflow: hidden;
+}
+
+#page{
+  height: 100vh;
+  width: 100vw;
+  background-color: #E5E0DC;
+}
+
+#page h1{
+  position: absolute;
+  font-family: NoiGrotesk;
+  font-weight: 500;
+  font-size: 100px;
+  z-index: 99;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #121718;
+}
+
+#page h4{
+  position: absolute;
+  font-family: NoiGrotesk;
+  font-weight: 400;
+  font-size: 25px;
+  z-index: 99;
+  text-align: center;
+  top: 7.5%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #121718;
+}
+
+canvas{
+  height: 100vh;
+  width: 100vw;
+  z-index: 9;
+}
+
+#page1{
+  height: 100vh;
+  width: 100vw;
+  background-color: #E5E0DC;
+  position: relative;
+}
+
+#page1 h1{
+  font-size: 100px;
+  font-weight: 500;
+  font-family: NoiGrotesk;
+  z-index: 99;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #121718;
+}
+
+#page1 h4{
+  position: absolute;
+  font-family: NoiGrotesk;
+  font-weight: 400;
+  font-size: 25px;
+  z-index: 99;
+  text-align: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #121718;
+  
+}
+
+#page2{
+  position: relative;
+  height:100vh;
+  width: 100vw;
+  background-color: transparent ;
+}
+
+#page3{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 99;
+  background-color: transparent;
+}
+
+#page4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 99;
+  background-color: transparent;
+  text-align: center;
+  background-color: #E5E0DC;
+}
+
+#page4 h1{
+  font-family: NoiGrotesk;
+  font-weight: 400;
+  font-size: 60px;
+  color: #121718;
+  
+}
+
+#page4 h4{
+  font-family: NoiGrotesk;
+  font-weight: 400;
+  font-size: 25px;
+  color: #121718;
+  margin-top: 20px;
+
+}
+
+#page4 #images img {
+  margin-top: 20px;
+  width: 100px;
+}
+
+#page4 #images #img1{
+  margin-right: 25px;
+}
+#page4 #images #img2{
+  margin-left: 25px;
+}
+
+#page5{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+#page5 h2{
+  font-family: NoiGrotesk;
+  position: absolute;
+  z-index: 99;
+  width: 75%;
+  top: 12%;
+  left: 15%;
+  font-size: 70px;
+  font-weight: 500;
+}
+
+#center-page5{
+  display: flex;
+  position: absolute;
+  height: 70%;
+  width: 75%;
+  background-color: #F6F3EF;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+}
+
+#left-page5{
+  height: 100%;
+  width: 50%;
+}
+
+#left-page5 svg{
+  scale: 0.8;
+}
+
+#right-page5{
+  display: flex;
+  gap: 25px;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  padding-left: 60px;
+}
+
+#right-page5 h1{
+  font-family: NoiGrotesk;
+  font-size: 60px;
+  font-weight: 100;
+
+}
+
+#right-page5 h4{
+  font-family: NoiGrotesk;
+  font-weight: 100;
+  font-size: 23px;
+  width: 75%;
+}
+
+#right-page5 button{
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #121718;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+#page6{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#center-page6{
+  display: flex;
+  position: absolute;
+  height: 70%;
+  width: 75%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+}
+
+#page6 h2{
+  font-family: NoiGrotesk;
+  position: absolute;
+  z-index: 99;
+  width: 75%;
+  top: 5%;
+  left: 40%;
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.left-page6{
+  display: flex;
+  gap: 25px;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.left-page6 h1{
+  font-family: NoiGrotesk;
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.left-page6 h4{
+  font-family: NoiGrotesk;
+  font-weight: 100;
+  font-size: 23px;
+  height: 50%;
+  width: 70%;
+}
+
+.right-page6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.right-page6 video{
+  height: 90%;
+}
+
+#page7{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#center-page7{
+  display: flex;
+  position: absolute;
+  height: 80%;
+  width: 75%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+}
+
+.left-page7{
+  display: flex;
+  gap: 25px;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.left-page7 h1{
+  font-family: NoiGrotesk;
+  position: relative;
+  right: 30%;
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.left-page7 h4{
+  font-family: NoiGrotesk;
+  font-weight: 100;
+  font-size: 23px;
+  height: 50%;
+  width: 70%;
+}
+
+.right-page7{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.right-page7 video{
+  height: 90%;
+}
+
+#page8{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#center-page8{
+  display: flex;
+  position: absolute;
+  height: 80%;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+}
+
+.left-page8{
+  display: flex;
+  gap: 25px;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.left-page8 h1{
+  font-family: NoiGrotesk;
+  position: relative;
+  right: 58%;
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.left-page8 h4{
+  font-family: NoiGrotesk;
+  font-weight: 100;
+  font-size: 23px;
+  height: 50%;
+  width: 90%;
+}
+
+.right-page8{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.right-page8 img{
+  height: 70%;
+
+}
+
+
+
+
+
