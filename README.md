@@ -1,7 +1,6 @@
+![image_alt](https://github.com/sandeepswain03/Zelt-Website/blob/715eb1fb501fc84a3697e238f5badce5f57246f1/Zelt.png)
+
 # Zelt
-
-A brief description or overview of what the website is about.
-
 ## Table of Contents
 
 - [Introduction](#introduction)
